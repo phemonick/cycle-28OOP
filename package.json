@@ -1,0 +1,33 @@
+{
+  "name": "oop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/oop.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "babel-node ./src/oop.js",
+    "test": "mocha --compilers js:babel-core/register tests/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phemonick/cycle-28OOP.git"
+  },
+  "author": "oluwafemi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phemonick/cycle-28OOP/issues"
+  },
+  "homepage": "https://github.com/phemonick/cycle-28OOP#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "babel-watch": "^2.0.7",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  }
+}
