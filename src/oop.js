@@ -15,6 +15,12 @@ class Mobile {
     getManufacturer(){
         return this.manufacturer;
     }
+    getPrice(){
+        return this.cost;
+    }
+    static countDevice(){
+        return "device not counted"
+    }
 
 
 }
@@ -41,4 +47,8 @@ class Ios extends Mobile {
 
 let sams= new Android("nokia","os","dd",200);
 
- export default Android;
+ export {
+    Android,
+    Ios,
+    Mobile
+ } 
