@@ -1,18 +1,37 @@
 import { assert } from 'chai';
-import oop from '../src/oop.js'
+import Android from '../src/oop.js'
+import Mobile from	'../src/oop.js'
 
 // const assert = chai.assert;
 
 
 
-	describe("primeFactor", () => {
-
-		describe("handle invalid input", ()=> {
-			it("should display invalid input for string ", () => {
-				assert.equal(rainDrop("name"), "undefined");
+	describe("Mobile class ", () => {
+		
+		describe("type of object", ()=> {
+			let samsung= new Android("samsung","android","g1",2000);
+			it("expect typeof  ", () => {
+				assert.equal(typeof(samsung), typeof{});
 
 			});
 		})
+
+
+		describe("type of object", ()=> {
+			let samsung= new Android("samsung","android","g1",2000);
+			it("get phone model  ", () => {
+				assert.equal(samsung.getModel(), "g1");
+
+			});
+		})
+		describe("type of object", ()=> {
+			let samsung= new Android("samsung","android","g1",2000);
+			it("get phone price", () => {
+				assert.equal(samsung.getModel(), "g1");
+
+			});
+		})
+
 
 	
 
