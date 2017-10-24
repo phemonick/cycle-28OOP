@@ -1,4 +1,5 @@
 class Mobile {
+    //super class constructor
     constructor(man, os, mode, cos){
         this.manufacturer = man;
         this.operating_system = os;
@@ -6,6 +7,8 @@ class Mobile {
         this.cost = cos;
 
     }
+
+    //creating class methods to have acces to encapsulated variables
     getModel(){
         return this.model;
     }
@@ -18,34 +21,36 @@ class Mobile {
     getPrice(){
         return this.cost;
     }
+
+    //creating static method that cant be accessed outside the class
     static countDevice(){
         return "device not counted"
     }
 
 
 }
+//inheriting from super class mobile
 class Android extends Mobile {
 
     constructor(man, os, mode, cost){
         super(man, os, mode, cost)
 
     }
-    // getModel(){
-    //     return "This is Android Mobile "+ this.model;
-    // }
 }
+// inheriting from super class Mobile
 class Ios extends Mobile {
 
     constructor(man, os, mode, cost){
         super(man, os, mode, cost)
 
     }
+    //depicting polymorphism
     getModel(){
         return "This is Android Mobile "+ this.model;
     }
 }
 
-let sams= new Android("nokia","os","dd",200);
+
 
  export {
     Android,
